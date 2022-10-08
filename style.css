@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body{
+    transition:0.5s;
+    margin:0;
+    background-color: rgb(200 200 255);
+    color: rgb(255 87 87);
+    text-align:
+    center;
+    user-select: none;
+    font-family: 'Varela Round', sans-serif;
+}
+.top{
+    font-size: 3rem;
+    padding:3% 1%;
+}
+.top h1{
+    display:inline-block;
+    padding:1%;
+    margin:0;
+}
+.align-mid{
+    vertical-align: middle;
+}
+.hidden{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.mid{
+    padding-top:6%;
+}
+
+
+.n1, .n2, .n3, .n4, .n5, .n5, .n6{
+    border-radius: 1.5rem;
+    padding: 0;
+    margin:0 5%;  
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#dice1{background-color:#ff8080;}
+#dice1 hr{border-color: rgb(207 74 74);}
+/* #ffbf80 */
+#dice2{background-color: #70f670;}
+#dice2 hr{border-color:#29a42a}
+
+
+.n4 .row hr {
+    margin: 12px;
+}
+.n5 .row hr {
+    margin: 0 10px;
+}
+.n6 .inner{
+    transform: rotate(90deg);
+}
+.n6 hr{
+    margin:6px;   
+}
+.row{display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;}
+.mid{
+    display:flex;
+    justify-content: center;
+}
+.mid hr{
+    width:1.5rem;
+    height:0;     
+    border:none;
+    vertical-align: middle;
+    border-bottom:1.5rem dotted pink;
+}
+.rotate-135{
+    transform: rotate( 135deg);
+
+}
+
+@media screen and (max-width: 990px) {
+    img{
+        width:6rem;
+        
+    }
+  .top{
+    font-size: 1.5rem;
+    padding:5% 0%;
+}
+    
+.top h1{
+    padding:.1%;
+}
+    .mid{
+        padding-top:20%
+    }
+    .n1, .n2, .n3, .n4, .n5, .n5, .n6{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+.n5 .row hr {
+    margin: 2px 10px;
+}
+
+
+.mid hr{
+    width:1rem;
+    height:0;     
+    border:none;
+    vertical-align: middle;
+    border-bottom:1rem dotted pink;
+}
+    
+}
+
+@media screen and (max-width: 520px) {
+    .top{
+        font-size:1rem;
+    }
+    img{
+        width:3rem;
+    }
+    .mid{
+        padding-top:50%;
+    }
+    
+}
