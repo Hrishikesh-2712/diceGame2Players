@@ -82,6 +82,21 @@ function flagUpdate(p1, p2) {
   }
 }
 
+function scoreUpdate(p1,p2){
+  if(p1>p2){
+    
+    score = document.querySelector(".pl1 strong")
+    score.textContent = parseInt(score.textContent)+1
+  
+}
+else if(p2>p1){
+   score = document.querySelector(".pl2 strong")
+    score.textContent = parseInt(score.textContent)+1
+  
+}
+
+}
+
 function roll() { return Math.floor(Math.random() * 6 + 1) }
 
 
@@ -100,10 +115,10 @@ document.getElementsByTagName('body')[0].addEventListener('click', (e) => {
   }
   else {
     n = 0
-    winMessage = `<strong>Match Draw!<strong>`
+    winMessage = `Match Draw!`
   }
 
-
+  scoreUpdate(p1,p2)
   flagUpdate(p1, p2)
   document.getElementsByClassName('top')[0].getElementsByTagName('h1')[0].innerHTML = winMessage
 })
