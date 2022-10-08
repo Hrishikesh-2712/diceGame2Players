@@ -5,7 +5,7 @@ body{
     transition:0.5s;
     margin:0;
     background-color: rgb(200 200 255);
-    color: rgb(255 87 87);
+    color: rgb(237 97 97);;
     text-align:
     center;
     user-select: none;
@@ -135,4 +135,11 @@ body{
         padding-top:50%;
     }
     
+}
+.pl1, .pl2{padding:0 2%;
+          color:gray;}
+
+strong{
+    font-size:2rem;
+    color:#699bff
 }
